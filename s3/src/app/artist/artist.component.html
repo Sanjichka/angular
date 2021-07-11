@@ -1,0 +1,21 @@
+<div class="artist" *ngIf="ars.streams>10">
+
+    <div class="name">
+      {{ars.name}}
+    </div>
+    <img width="300" alt="Artist Image"
+    [src]="ars.iconUrl">
+  
+    <div class="song">
+      {{ars.song}}
+    </div>
+  
+    <div>
+      {{"Record Label: "+ars.label}}
+    </div>
+  
+    <div>
+      {{"Song streams: "+ars.streams}}
+    </div>
+  
+  </div>

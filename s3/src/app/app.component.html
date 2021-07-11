@@ -1,0 +1,20 @@
+<div class="top-menu">
+
+  <img class="logo"
+       src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Rolling_Stone_2019.svg/360px-Rolling_Stone_2019.svg.png">
+
+</div>
+
+
+<div class="courses">
+  
+  <artist *ngFor="let artist of artisti; even as paren; odd as neparen" [ars]="artist"
+  [class.is-odd]="neparen"
+  [class.is-even]="paren"
+  ></artist>
+
+
+
+</div>
+
+
